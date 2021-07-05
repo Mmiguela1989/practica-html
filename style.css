@@ -1,0 +1,63 @@
+.parrafo-1{
+    color: blue;
+}
+table{
+    font-family: sans-serif;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+caption{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+th, td{
+    border: 2px solid gray;
+    padding: 1rem;
+    font-size: 14px;
+    padding: 5px;
+}
+
+tr:nth-child(4), td:nth-child(2){
+    background-color: rgb(9, 252, 70);
+}
+
+td:first-child, tfoot {
+    background-color: blueviolet;
+}
+
+col{
+    background-color: rgb(253, 0, 0);
+}
+
+col:nth-child(2){
+    background-color: crimson;
+}
+
+col:nth-child(3){
+    background-color: darkblue;
+}
+
+span{
+    color: blue;
+    font-size: 20px;
+}
+
+q{
+    font-size: 30px;
+}
+
+footer{
+    padding-top: 300px;
+
+}
+
+img, video{
+    max-width: 100%;
+}

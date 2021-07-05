@@ -1,0 +1,1030 @@
+<!-- Marca el lenguej con que el que se crea la pagina html5-->
+<!DOCTYPE html>
+
+<!-- Indica el el inicio de todo el documento y en que idioma esta echo-->
+<html lang="en">
+<!-- indica la cabecera de la pagna con todo la informacion que se envia, no sale reflejado en en navegador -->
+
+<head>
+    <!-- indica en que codificacion de caracteres esta echa la pagina-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--sirve para adaptar a mobiles sin ella no funciona la adaptabilidad (responsive)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- sirve para la informacion del sitio web en el google-->
+    <meta name="description" content="Contenido que se va a ver en el snipet de google">
+
+    <!-- para el incono se pued entrar en favicon-generator.org/ y desde hay subir la imagen y genrar todos los links para el favicon-->
+
+    
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    
+
+    <!-- Titulo del docmento que se ve reflejado en la pestaña del navegador-->
+    <title>Document</title>
+
+    
+</head>
+
+<!-- Todo el cuerpo de la pagina que esta reflejado en el dom del navegador-->
+
+<body>
+    <header>
+        <!-- Se empieza colocando el header donde va el menu de navegacion logotipo y portada redes sociales y alguna que otra cosa-->
+        <h1>Cabecera h1</h1>
+    </header>
+
+    <main>
+        <!--Ejemplo 01-->
+
+        <!-- entre las etiquetas main debe ir todo el contenido de la pagina-->
+        <h1>Harry Potter h1</h1>
+        <h2>Peliculas h2</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos non et
+            deserunt dolorum nisi reiciendis recusandae possimus quod distinctio
+            officia aspernatur repellendus quam, aut ducimus impedit mollitia
+            veritatis enim! Rerum.
+        </p>
+        <h2>Novelas h2</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
+            dolorum sed minima delectus asperiores labore sapiente molestias placeat
+            praesentium harum, vel ea quod, repellendus cupiditate magni illo iste
+            eius quisquam!
+        </p>
+        <h3>Harry potter y el caliz de fuego h3</h3>
+        <h4>Actores h4</h4>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+            exercitationem error esse totam aspernatur ea illo deserunt fugit libero
+            beatae at officia aliquid placeat praesentium, aut corporis ut a velit!
+        </p>
+
+        <!-- seccion de contenido
+
+            section o article? ambas son validas y una puede estar dentro de la otra o viceversa
+
+
+            section: es un contenedor generico que agrupa contenido que esta relacionado. cuando creamos bloques cuyo contenido es parte de un bloque total usaremos seccion
+
+            article: es un contenedor que representa contenido independiente, es decir, podemos leer este fragmento en cualquier otro sitio y tendria sentido por si mismo
+
+            aside: se utiliza para representar contenido relacionado pero que no forma parte del contenido principal
+
+                anidamiento: un section puede contener articles, por ejemplo, si tenemos varios articulos que hablan sobre etiquetas html, deben ir dentro de un section, ya que es contenido relacionado entre si, y los article serian contenido independiente por que podriamos leer uno sin haber leido el resto y seguiria teniendo sentido.
+                el article es definido como un componente de la pagina de contenido independiente, esto implica que esta etiqueta pueda tener un header y un footer propios.
+
+                tambien existe el caso en el que un article tenga varios sections, el articulo independiente podria ser navegadores y este contener dentro sections como navegadores mas utilizados en 2020
+        -->
+        <!--Ejemplo 02 un section con distintos articles-->
+        <section>
+            <!-- seccion como contenedor -->
+            <h2>Noticias nacionales</h2>
+            <section>
+                <h3>Noticias nacionales</h3>
+
+                <!-- semanticamente correcto se coloca el seccion y adentro los articulos. se puede tener un header/footer dentro de los articulos-->
+                <article>
+                    <!-- header -->
+                    <header>
+                        <h4>Noticias 01 h2</h4>
+                    </header>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                        velit ab veritatis voluptatem molestiae temporibus. Corrupti,
+                        iste. Repudiandae praesentium tenetur, eius magni voluptates
+                        veniam velit, ipsum molestiae ipsa magnam iusto.
+                    </p>
+
+                    <!-- footer-->
+                    <footer>
+                        <p>Fecha y localidad</p>
+                    </footer>
+                </article>
+
+                <article>
+                    <h4>Noticias 02 h2</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                        velit ab veritatis voluptatem molestiae temporibus. Corrupti,
+                        iste. Repudiandae praesentium tenetur, eius magni voluptates
+                        veniam velit, ipsum molestiae ipsa magnam iusto.
+                    </p>
+                </article>
+                <article>
+                    <h4>Noticias 02 h2</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                        velit ab veritatis voluptatem molestiae temporibus. Corrupti,
+                        iste. Repudiandae praesentium tenetur, eius magni voluptates
+                        veniam velit, ipsum molestiae ipsa magnam iusto.
+                    </p>
+                </article>
+
+                <!-- se puede tener un seccion dentro de otro seccion con articulos dentros. -->
+            </section>
+        </section>
+
+        <!-- section dentro del article tomando a article como contenido independiente -->
+
+        <article>
+            <h2>Navegadores mas usado</h2>
+            <section>
+                <header>
+                    <h3>Chrome</h3>
+                </header>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quasi
+                    voluptate eaque animi quis quibusdam ex quae atque a. Dolores,
+                    laborum magnam libero debitis nulla laboriosam consectetur impedit
+                    ratione eligendi!
+                </p>
+                <footer>
+                    <p>Fecha del ariculo</p>
+                </footer>
+            </section>
+            <section>
+                <h3>firefox</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quasi
+                    voluptate eaque animi quis quibusdam ex quae atque a. Dolores,
+                    laborum magnam libero debitis nulla laboriosam consectetur impedit
+                    ratione eligendi!
+                </p>
+            </section>
+            <section>
+                <h3>internet explorer</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quasi
+                    voluptate eaque animi quis quibusdam ex quae atque a. Dolores,
+                    laborum magnam libero debitis nulla laboriosam consectetur impedit
+                    ratione eligendi!
+                </p>
+            </section>
+        </article>
+
+        <!--
+            Elementos de bloque: todo los elementos que ocupan todo el ancho disponible aunque su contenido no lo ocupe asi como todos los elementos que ya se han visto.
+            
+            elemmentos de linea: solo ocupa el especio que ocupa su contenido
+                ejemplos de elementos de linea:
+                <em>     enfasis
+                <stron>  mas enfasis
+                <small>  menos enfasis en el texto normal
+                <br>     forzar un salto de linea
+                <wbr>    salto de linea si hiciera falta
+                <time>   se usa para representar el contenido de hora y fecha
+                <i>      italic
+                <b>      bold
+                <u>      underline
+                <sup>    superIndices
+                <sub>    subIndice
+
+            nota: hay que tener en cuenta que sirve para indicarle al navegador la relevancia en los texto pero los stilos se aplican con css
+        -->
+
+        <h1>Soy elemento de bloque</h1>
+        <p>soy elemnto de bloque</p>
+        <span>soy elemento de linea</span>
+        <p>
+            soy elemento de bloque
+            <span>soy elemento de linea dentro de bloque</span>
+        </p>
+        <p>
+            Lorem ipsum <em>sit amet consectetur</em> , adipisicing elit.
+            <strong>qui molestia</strong> s voluptatibus
+            <small>optio adipisci distinctio atque</small> Officiis <br />
+            odio doloribus commodi ipsa, culpa unde iusto consectetur rerum
+            voluptatibus quas aperiam.
+        </p>
+        <time>20/26/2015 7:45</time>
+        <p>4 elevado al cuadrado 4<sup>2</sup></p>
+        <p>4 elevado al cuadrado 4<sub>2</sub></p>
+
+        <!--
+            Algunos atributos globales que estan disponibles para la mayoria de las etiquetas de html
+
+                class: este atributo se utiliza para dar estilos a travez de css
+
+                id: es un identificador unico que se utiliza para seleccionar el elemento desde js y para hacer navegacion a travez de anclas
+
+                title: es un atributo que ayuda a la accesibilidad mostrando una descripcion del sistema al que pertenece
+
+                data-*: es un atributo que nos permite guardar algun valor en la etiqueta html
+
+        -->
+
+        <p class="parrafo-1">class</p>
+        <!-- el id no se puede repetir-->
+        <p id="parrafo">identificador</p>
+        <p title="ejemplo">titulo con tooltip</p>
+        <!-- ayuda en javascrtip muchisimo-->
+        <p id="parrafo2" data-ejemplo="Datos de ejemplo">datos pasado en la etiqueta</p>
+
+
+        <!--
+            Enlaces: conocidos tambien por links popularmente. su objetivo es conectar una pagina web con otra, con un recurso tanto interno como externo, o con otro sitio web.
+            
+            tienen el atributo onbligatorio href="", donde espesificamos la ruta del recurso o sitio que queremos obtener
+            
+            tambien tiene el atributo target, que configura como queremos visualizar el recurso o sitio que solicitamos.
+
+                rutas absolutas:
+                    tiene un protocolo, http o https, y son unicas en la red se suelen utlizar para rutas externas.
+
+                rutas relativas:
+                    pueden ser relativas al punto donde nos encontramos o relativas a la raiz del proyecto
+                    no usan protocolo
+                    si el recurso se encuentra al mismo nivel (en la misma carpeta) se pone ununicamente el nombre del mismo archivo.
+                    si necesitamos salir de la carpeta actual usaremos ../ y se pone uno por cada nivel (carpeta) de la que queremos salir.
+                
+                atributos de los enlaces
+                    target: define donde se abrira el recurso solicitado. por norma general siempre que se use rutas absolutas se pone como valor "_blank" el valor por defecto es "_self"
+
+                    download: atributo boleano, sirve para descargar el recurso solicitado. Importante el recurso debe de estar en el mismo servidor.
+
+        -->
+
+        <h2>ruta relativa</h2>
+        <!-- se debe anteponer el / para empezar desde la raiz del proyecto-->
+        <a href="contacto.html">ir a contacto</a>
+
+        <h2>ruta absoluta</h2>
+        <!-- se debe indicar el protocolo con el que se va a acceder-->
+        <a href="https://www.google.com" target="_blank">ir a google</a>
+
+        <!-- Todos los recursos de la web todos los medios externos, imagenes, videos, musica, iconos y todo ese tipo de cosas
+        -->
+
+        <a href="/assets/imagenes/gato-marron.jpg" download>Imagen de gato</a>
+
+        <!-- navegacion interna dentro de una pagina del sitio web, tambien se puede navegar desde otra pagina a otra pagina pero hacia un punto especial colocando 
+
+        <a href="contacto.html#post-1">ir a contacto</a>
+        -->
+
+        
+        <h2>Blog</h2>
+        <nav>
+            <p><a href="#post-1">post 1</a></p>
+            <p><a href="#post-2">post 2</a></p>
+            <p><a href="#post-3">post 3</a></p>
+            <p><a href="#post-4">post 4</a></p>
+            <p><a href="#post-5">post 5</a></p>
+
+        </nav>
+        <article>
+            <h3 id="post-1">post 1</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos ad rerum et blanditiis, odio, ea sunt repellendus laborum id earum molestias quibusdam quo omnis, quas beatae vero? Dignissimos, illum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos ad rerum et blanditiis, odio, ea sunt repellendus laborum id earum molestias quibusdam quo omnis, quas beatae vero? Dignissimos, illum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos ad rerum et blanditiis, odio, ea sunt repellendus laborum id earum molestias quibusdam quo omnis, quas beatae vero? Dignissimos, illum.
+            </p>
+        </article>
+        <article>
+            <h3 id="post-2">post 2</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos labore quod temporibus nobis molestiae obcaecati minus quidem, autem esse nam porro aut quibusdam, dolore velit harum vel nesciunt! Ea, laboriosam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos ad rerum et blanditiis, odio, ea sunt repellendus laborum id earum molestias quibusdam quo omnis, quas beatae vero? Dignissimos, illum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos ad rerum et blanditiis, odio, ea sunt repellendus laborum id earum molestias quibusdam quo omnis, quas beatae vero? Dignissimos, illum.
+            </p>
+        </article>
+        <article>
+            <h3 id="post-3">post 3</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos labore quod temporibus nobis molestiae obcaecati minus quidem, autem esse nam porro aut quibusdam, dolore velit harum vel nesciunt! Ea, laboriosam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos ad rerum et blanditiis, odio, ea sunt repellendus laborum id earum molestias quibusdam quo omnis, quas beatae vero? Dignissimos, illum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos ad rerum et blanditiis, odio, ea sunt repellendus laborum id earum molestias quibusdam quo omnis, quas beatae vero? Dignissimos, illum.
+            </p>
+        </article>
+        <article>
+            <h3 id="post-4">post 4</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos labore quod temporibus nobis molestiae obcaecati minus quidem, autem esse nam porro aut quibusdam, dolore velit harum vel nesciunt! Ea, laboriosam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos ad rerum et blanditiis, odio, ea sunt repellendus laborum id earum molestias quibusdam quo omnis, quas beatae vero? Dignissimos, illum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos ad rerum et blanditiis, odio, ea sunt repellendus laborum id earum molestias quibusdam quo omnis, quas beatae vero? Dignissimos, illum.
+            </p>
+        </article>
+        <article>
+            <h3 id="post-5">post 5</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos labore quod temporibus nobis molestiae obcaecati minus quidem, autem esse nam porro aut quibusdam, dolore velit harum vel nesciunt! Ea, laboriosam.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos ad rerum et blanditiis, odio, ea sunt repellendus laborum id earum molestias quibusdam quo omnis, quas beatae vero? Dignissimos, illum.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quos ad rerum et blanditiis, odio, ea sunt repellendus laborum id earum molestias quibusdam quo omnis, quas beatae vero? Dignissimos, illum.
+            </p>
+        </article>
+
+        <!-- Las listas en html sinver para listar contenido. en funcion del tipo de contenido de nuestra lista tenemos 3 tipos de lista:
+            
+            ul: unorderer list, se utilizan cuando el orden de los elementos no influye (lista de compra).
+                atributos
+                type: estilo de los items (disc, square, circle)
+            
+            ol: orderer list, se utiliza cuando el orden de los elementos es importante (top 10).
+                atributos
+                type: estilo de numeracion (1, A, a, I, i)
+                star: inicio de la secuencia en numero arriba. 
+
+            cada elemento de la lista se representa con la etiqueta <li> tanto en ul como en ol. 
+
+            dl: definition list, se utiliza para hacer una lista de definiciones (diccionario). cada elemento de una lista de definicion lleva 2 etiquetas:
+                dt: definicion term, el termino que vamos a definir 
+                dd: definition descripcion, la descripcion del termino.
+
+        Es muy importante cuando distinguir cual se va a usar una o otros por que a travez de css se le puede dar el aspecto el navegador no va a entender cuando trabajemos con un ul o ol.
+
+        se puede construi listas anidades teniendo en uno de los li otro ul/ol segun sea necesario.
+        -->
+
+        <h2>Listas</h2>
+        <!-- Metodo correcto para hace run menu de navegacion-->
+        <nav>
+            <ul>
+                <li><a href="post-1">post-1</a></li>
+                <li><a href="post-2">post-2</a></li>
+                <li><a href="post-3">post-3</a></li>
+                <li><a href="post-4">post-4</a></li>
+                <li><a href="post-5">post-5</a></li>
+                <li><a href="post-6">post-6</a></li>
+                
+            </ul>
+        </nav>
+        
+        <h2>Lista de la compra</h2>
+        <ul>
+            <li>Pan</li>
+            <li>huevos</li>
+            <li>Leche</li>
+            <li>maiz</li>
+            <li>arroz</li>
+            <li>caraota</li>
+        </ul>
+        <h2>orden de aprendizaje en el desarrollo web</h2>
+
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>javascript</li>
+            
+        </ol>
+
+        <h2>Lenguajes para el desarrollo web</h2>
+
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat at dolore ratione sunt. Delectus sed ratione at illum vero, quas expedita nemo labore consectetur obcaecati, pariatur unde. Voluptatem, pariatur amet.</dd>
+
+            <dt>CSS</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat at dolore ratione sunt. Delectus sed ratione at illum vero, quas expedita nemo labore consectetur obcaecati, pariatur unde. Voluptatem, pariatur amet.</dd>
+
+            <dt>javascript</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat at dolore ratione sunt. Delectus sed ratione at illum vero, quas expedita nemo labore consectetur obcaecati, pariatur unde. Voluptatem, pariatur amet.</dd>
+        </dl>
+
+        <!-- Las tablas sirven pra mostrar contenido tabulado
+
+            la estrucura de una tabla se componede
+            table: etiqueta que encierra la tabla
+            tr: table row, etiqueta que construlle una fila
+            td: table data, etiqueta que construlle una celda
+
+            truco: el numero de celdas dentro de la td establecera el numero de ecolumbas de la tabla.
+
+            los titulos de la tablas se establecen con la etiqueta caption, es una etiqueta opcional, y segun las espesificaciones esa etiqueta se coloca justo despues de la etiqueta table.
+
+            las cabeceras de las tablas se establecen con la etiqueta thead.
+            dentro tendremos la etiqueta tr normal, pero en el caso de las celdas las establecemos con la etiqueta th en lugar de td
+
+            el contenido de la tabla debe ir dentro de una etiqueta tbody para repersentar el cuerpo de la tabla
+            
+            de forma opcional podemos colocar un tfoot a la tabla para establecer un pie de tabla, esto es algo que algunas tablas tienen como suma de cantidades o total.
+
+            para hacer que las celdas ocupen mas de una fila o mas de una columna tenemos 2 atributos:
+                rowspan: sirve para que una celda ocupe mas de una fila, el valor por defecto es 1
+                colspan: sirve para que una celda ocupe mas de una columna, el valor por defecto es 1
+
+            cuando necesitamos seleccionar una columna, tenemos la etiqeuta <colgroup>, que nos permite seleccionar una columna en concreto. dentro pondremos tantas etiquetas <col> como columnas tengamos, cada etiqueta col equivaldra a una columna siguiendo el mismo orden que tiene en la tabla
+
+            si necesitamos que una etiqueta col agrupe mas de una columna, tenemos el atributo span, que funciona exactamente igual que un colspan y rowspan
+        -->
+
+        <h2>tabla</h2>
+
+            <table>
+                <caption>Horario</caption>
+                <colgroup>
+                    <col>
+                    <col span="2">
+                    <col span="1">
+                    <col span="3">
+                    
+                </colgroup>
+            <thead>
+                <tr>
+                    <th>dia</th>
+                    <th>dia</th>
+                    <th>dia</th>
+                    <th>dia</th>
+                    <th>dia</th>
+                    <th>dia</th>
+                    <th>dia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>lunes</td>
+                    <td>martes</td>
+                    <td rowspan="2">miercoles</td>
+                    <td>jueves</td>
+                    <td>viernes</td>
+                    <td>sabado</td>
+                    <td>domingo</td>
+                </tr>
+                <tr>
+                    <td>lunes</td>
+                    <td>martes</td>
+                    
+                    <td>jueves</td>
+                    <td>viernes</td>
+                    <td>sabado</td>
+                    <td>domingo</td>
+                </tr>
+                <tr>
+                    <td colspan="7">recreo</td>
+                </tr>
+                <tr>
+                    <td>lunes</td>
+                    <td rowspan="2">martes</td>
+                    <td>miercoles</td>
+                    <td>jueves</td>
+                    <td>viernes</td>
+                    <td>sabado</td>
+                    <td>domingo</td>
+                </tr>
+                <tr>
+                    <td>lunes</td>
+                    
+                    <td>miercoles</td>
+                    <td>jueves</td>
+                    <td>viernes</td>
+                    <td>sabado</td>
+                    <td>domingo</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Total de dias</td>
+                    <td>12 dias o mas</td>
+                </tr>
+
+            </tfoot>
+        </table>
+<br>
+
+        <!-- Etiquetas de bloque
+
+            address: se utiliza para aportar informacion de contacto para el article mas cercano o para todo el body
+            
+            blockquote: se utiliza para marcar la cita a otros autores o documentos, se puede incluir el atributo cite para poner un enlace al documento original o fuente. 
+
+            pre: se utiliza para tener un codigo pre formateado que necesita ser representado igual que se escribio.
+
+            div: se usa como divicion del documento, semanticamente no significa nada, es un contenedor generico que se usa generalmente para dar stilos a traves de css o para usar algo denominado "delegacion de eventos" en javascript
+
+            hr: horizontal rule, se utiliza para decirle al navegador que vamso a cambiar de tema. no es para dibujar lineas en el navegador, es para decirle que se cambia de tema.
+        -->
+
+        <address>
+            Miguel Mendoza <br>
+            caracas 7890 <br>
+            7863 <br>
+            Venezuela 
+
+
+        </address>
+
+        <blockquote cite="de-donde-no-se.com">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores praesentium unde reiciendis, corporis quo amet explicabo autem delectus, doloribus maiores expedita commodi illo. Odit vero, asperiores repellendus placeat minima neque.
+            </p>
+        </blockquote>
+
+        <pre>
+                            hola
+            como estas?
+                            bien
+        
+        </pre>
+
+        <div>
+            <!-- para dar stilos a cada uno de los elementos o generar clases-->
+            <h2>nombre</h2>
+            <p>direccion</p>
+            <p>email</p>
+        </div>
+        <div>
+            
+            <h2>nombre</h2>
+            <p>direccion</p>
+            <p>email</p>
+        </div>
+
+        <hr>
+
+        <!--Otras etiquetas en linea
+
+            span: es un contenedor de linea. equivalente a div, se suele usar para encerrar palabras o pequeños textos y darles stilos a travez de css o localizarlos desde javascript, semanticamente no significa nada.
+
+            q: es el equivalente a blockquote, significa quote, por eso el bloque se llama block - quote. sirve para poner citas pero en linea. tambien admite el atributo de cira
+
+            code: sirve para encerrar codigo que queremos representar visualmente, suele ser unico a la etiqueta pre
+
+            entidades especiales en HTML - codigo ASCII
+                https://ascii.cl/es/codigos-html.htm
+
+        -->
+
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet <span>consectetur adipisicing elit.</span>  Aliquam, sequi voluptate impedit ex inventore perspiciatis <q cite="de-mis-cojones.com">veniam pariatur voluptas,</q> tenetur aspernatur ad, cum dolorem nemo alias iure commodi dolor labore officiis!
+            </p>
+        </div>
+
+        <pre>
+            <code>
+                col:nth-child(3){
+                    background-color: darkblue;
+                }
+            </code>
+        </pre>
+        <p>
+            Lorem ipsum dolor <code> esto es un &#60;h1&#62; asi mismo </code> sit amet consectetur adipisicing elit. Tempora dolore molestias.
+        </p>
+
+
+        <!--Estructura basica de los formularios
+
+            la estructura basica de un formulario se compone de 4 elementos
+
+            form: es la etiqueta que engloba nuestro formulario
+            label: sirve para escribir el nombre del campo a rellenar
+                debe tener el atributo for al cual se le indica un id que lo que ara sera emparejar el label con su input correspondiente
+
+            input: sirve para cream un campo que permite al usuario interacturas
+            button: crea un boto que permite enviar el formulario
+
+            el comportamiento de un formulario es recojer la informacion y enviarla. cada ves que se le de al boton se recarga la pagina para quitar esto se usa javascript
+
+            Nota: la informacion se envia a lo que anotemos en el action del form
+        -->
+
+
+        <form action="">
+            <label for="name">Nombre</label>
+            <input type="text" id="name">
+            <button>Enviar</button>
+        </form>
+
+        <!--Otra forma de hacerlo no recomendable para darle estilos al css pero tambien es correcto. -->
+
+        <form action="">
+            <label for="">
+                Nombre
+                <input type="text">
+            </label>
+            <button>Enviar</button>
+        </form>
+
+        <!--Lista con algunos tipos de imputs que existe para los formularios
+
+            input type: son atributos de input
+                button: se comporta igual que un <button>
+                submit: se utiliza para enviar el formulario
+
+                
+                date: se utiliza para introducir una fecha
+                datetime: obsolet
+                datetime-local: fecha y hora, no funciona en firefox
+                time: se utiliza para introducir una hora
+                    TIP:
+                    se recomienda usar date y time para seleccionar fecha y hora en inputs separados
+                    
+                    hidden: campo oculto, puede contener valor pero no se mostrara
+
+                month: se utiliza para introducir el mes
+                week: se utiliza para introducir el numero de semana del año
+
+                search: se utiliza para las barras de busqueda
+                tel: se utiliza para introducir numeros telefonicos
+                email: se utiliza para introducir un email
+                number: se utiliza para valores numericos
+                password: se utiliza para contraseñas
+                url: se utiliza para introducir Urls
+
+                range: se utiliza para establecer un rango
+                reset: se utiliza para resetear el formulario
+                color: se uttiliza para espesificar un color 
+                text: valor por defecto
+                
+                
+                
+        -->
+
+        <form action="">
+
+            <input type="text">
+
+            <!--la diferencia del input=button y el button es que este ultimo es para envair formularios y el otro es para hacer operaciones o interaccion con el usuario con javascript-->
+            
+            <input type="button" value="Enviar input">
+            <button>Enviar</button>
+            <!--el input=submit  es el que se puede usar como sustituto al button -->
+            <input type="submit" value="Submit">
+        </form>
+
+        <form action="">
+            <input type="date">
+            <input type="time">
+            <input type="month">
+            <input type="week">
+            
+        </form>
+
+        <form action="">
+
+            <label for="">search
+                <input type="search">
+            </label><br>
+            <label for="">tel
+                <input type="tel">
+            </label><br>
+            <label for="">email
+                <input type="email">
+            </label><br>
+            <label for="">number
+                <input type="number">
+            </label><br>
+            <label for="">password
+                <input type="password">
+            </label><br>
+            <label for="">url
+                <input type="url">
+            </label>
+        </form>
+
+        <form action="">
+            <input type="color">
+            <input type="number">
+            <input type="range" step="5" min="0" max="30">
+            <input type="reset">
+            <input type="text">
+        </form>
+
+        <!--estos son los inputs que permite seleccionar elementos dentro de una lista de opciones.
+
+            radio: permite seleccionar una unica opcion de una lista de opciones relacionadas. deben estar todos dentro de un mismo name="" para que se seleccione uno solo y tambien esta el atributo value="" para indicarle al formulario que valor tiene cuando se envie al servidor. 
+
+            checkox: permites seleccionar varias opciones de una lista de opciones relacionadas.
+
+            select: crea una lista de opciones donde podamos seleccionar una o varias no son un input son una etiqueta aparte el atributo multiple permite seleccionar varios opciones
+
+            cada opcion ira dentro de una etiqueta <option>
+
+            si tenemos muchas opciones podemos ordenarlas por categorias a travez de la etiqueta <optgroup> con el atributo label para normar las categorias.
+
+        -->
+
+        <form action="">
+            <h2>Genero seleccionable uno solo radio</h2>
+            <label for="">Femenino
+                <input type="radio" name="genero" checked value="masculino">
+            </label>
+            <label for="">Masculino
+                <input type="radio" name="genero" checked value="femenino">
+            </label>
+            <label for="">Binario
+                <input type="radio" name="genero" checked value="binario">
+            </label>
+        </form>
+
+        <form action="">
+            <h2>varios elementos selecionables con checkox</h2>
+            <label for="">
+                HTML
+                <input type="checkbox" name="lengueje" value="html">
+            </label>
+            <label for="">
+                CSS
+                <input type="checkbox" name="lengueje" value="CSS">
+            </label>
+            <label for="">
+                JavaScript
+                <input type="checkbox" name="lengueje" value="JavaScript">
+            </label>
+        </form>
+
+        <form action="">
+            <h2>Elemtos de tipo seleccionables</h2>
+            <select name="lengueh" id="" multiple>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+        </form>
+
+
+        <form action="">
+            <h2>Seleccion multiples</h2>
+            <select name="mascotas" id="">
+                <optgroup label="4 patas">
+                    <option value="perro">perro</option>
+                    <option value="gato">gato</option>
+                    <option value="hammster">hammster</option>
+                    <option value="conejo">conejo</option>
+                </optgroup>
+                <optgroup label="aves">
+                    <option value="loro">loro</option>
+                    <option value="canario">canario</option>
+                </optgroup>
+                <option value="serpientes">serpientes</option>
+                <option value="tarantula">tarantula</option>
+            </select>
+        </form>
+
+        <form action="">
+            <h2>elementos seleccionables con busqueda</h2>
+            <input type="list" list="pets">
+            <datalist id="pets">
+                <option value="dog"></option>
+                <option value="gato"></option>
+                <option value="hamster"></option>
+                <option value="conejo"></option>
+                <option value="loro"></option>
+                <option value="canario"></option>
+                <option value="serpiente"></option>
+                <option value="tarantula"></option>
+            </datalist>
+        </form>
+
+        <!--
+            fieldset: se utiliza para agrupar elementos dentro de un mismo formulario
+            lengend: representa una etiqueta para el contenido del fieldset
+            file: este input se utiliza para cargar archivos y enviarlos desde un formulario
+            meter: representa un valor dentro de un rango conocido
+            progress: representa el progreso de una tarea
+            textarea: se utiliza para introducir texto dentro de un formulario
+        -->
+        <hr>
+
+
+        <form action="">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="apellido">
+                </div>
+            </fieldset>
+            <hr>
+
+            <input type="file">
+
+            <hr>
+
+            <label for="fuel">combustible</label>
+            <meter id="fuel" min="0" max="100" value="60" low="30" high="75" optimum="50"></meter>
+
+            <hr>
+
+            <label for="task">tarea 1</label>
+            <progress id="task" max="100" value="70"></progress>
+
+            <hr>
+            <label for="message">Mensaje</label>
+            <textarea name="" id="message" cols="30" rows="10"></textarea>
+
+
+        </form>
+
+        <!--atributos de formularios
+
+            placeholder: da una pista de lo que el usuario debe introducir
+            
+            required: hace que un campo sea obligatorio se puede desactivar desde el inspector de pagina, para esto se hacen mas validaciones con javascript
+            
+            disable: desactiva el campo, no se podria escribir en el autofocus
+            
+            readonly: hace que un campo sea de solo lectura
+            
+            min - max: establece un minimo y un maximo de un campo numerico
+            
+            maxlength - minlength: establece el minimo y maximo de caracteres de un campo de texto
+            
+            selected: equivale al checked en los select, sirve para establecer una opcion por defecto
+            
+            autofocus: para poner el foco por defecto al cargar el formulario 
+        -->
+
+        <form action="">
+            <input type="text" placeholder="Introduce tu nombre">
+            <input type="text" value="hola" readonly>
+            <input type="text" value="hola" required>
+            <hr>
+            <select name="number" id="">
+                <option value="one">One</option>
+                <option value="two" selected>Two</option>
+            </select>
+            <hr>
+            <input type="number" max="5">
+            <input type="text" minlength="3" maxlength="6" required autofocus>
+            <input type="submit">
+        </form>
+        <hr>
+        <!--metodo Post y Get
+
+            conocer las diferencias cuando se trabaje con javascript para enviar y leer la informacion de los formularios es indispensable
+
+            el method="" por defecto es GET es el metodo que se ejecuta a travez de la url cuando entramos a una pagina es el metodo que se ejecuta es el metodo por defecto que tiene todas las paginas cuando le damos enter.     
+
+            el POST el envio de formularios por la parte de atras de la pagina. 
+
+            Nota siempre hay que usar el atributo name="" es el campo realmente que se va a enviar en el formulario. si no se colocara es como si el campo no existiera. 
+
+        -->
+
+        <form action="enviar.html" method="GET">
+            <label for="name">Nombre</label>
+            <input type="text" id="nombre" name="name">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellldo" name="apellido">
+            <input type="submit">
+
+        </form>
+
+        <!--Es el contenido embebido es todo el contenido que nos traemos de afuera, no forman parte del codigo pero si forman parte dle sitio wen, imagenes, video, audio y iframes
+            estos archivs son los que mas peso y tamaño le añaden al sitio web.
+
+            imagenes:
+            hay 2 tipos d eimagenes que se pueden usar deacuerdo a las necesidades del sitio
+
+            vecoriales:
+            svg (recomendable que siempre se usen.) logos, iconos.  no añaden peso
+
+            Mapa de bits: 
+            jpg:
+            png: imaganes de 8 y 24 bits que se usan cuando se necesite trasnparencia
+            gift: imagenes animadas
+            webp: es el formato que menos pesa toda imagen de cualquier formato jpg, png, gif se puede trasnformar en este formato y si el navegador no lo soporta se puede hacer un folback que es decirle que si no la entiende en este formato que se use las de formato antigua.
+
+            para convertir imagenes a formato webp
+
+        -->
+
+        <h2>contenido embebido imagenes</h2>
+
+        <img src="assets/imagenes/gato-marron.jpg" alt="un gato">
+
+        <img src="assets/imagenes/Hands-Thumbs-Up.png" alt="log face">
+
+        <img src="/assets/imagenes/facebook.svg" alt="logo face">
+
+        <!-- Si se necesita trabajar con la imagen svg desde el css o de java script para hacer alguna modificacion en tiempo real se trabaja de la siguiente forma se pueden cambiar colores animarlo-->
+
+        <?xml version="1.0" encoding="iso-8859-1"?>
+        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG      Version: 6.00 Build 0)  -->
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 512 512" style="enable-background:new 0 0 512         512;" xml:space="preserve">
+        <path style="fill:#1976D2;" d="M448,0H64C28.704,0,0,28.704,0,       64v384c0,35.296,28.704,64,64,64h384c35.296,0,64-28.704,64-64V64
+        	C512,28.704,483.296,0,448,0z"/>
+        <path style="fill:#FAFAFA;" d="M432,256h-80v-64c0-17.664,14.336-16,     32-16h32V96h-64l0,0c-53.024,0-96,42.976-96,96v64h-64v80h64
+        	v176h96V336h48L432,256z"/>
+
+        </svg>
+
+
+        <!--DPR (device pixel ratio)
+                es la relacion que existe entre los pixeles reales que tiene el dispositivo y los pixeles que tenemos disponibles para "pintar" contenido
+
+            DPR = pixeles reales / pixeles disponibles
+
+            https://whatismyviewport.com/ pagina para controlar el viewport ancho y alto de la pantalla.
+
+            se trata de reducir la imagen para las verciones de mobiles y tables de acuerdo al drp de las mismas para no hacer cargar iamgenes que son muy pesadas en dispositibos pequeños. 
+
+        -->
+
+        <h2>contenido embebido</h2>
+
+        <img srcset="assets/imagenes/gato-marron-pc-grande.jpg, assets/imagenes/gato-marron-mobile.jpg 2x" alt="portada">
+
+        <!-- tambien se puede usar la etiqueta <picture> para trabajar con diferentes medidas de imagenes-->
+
+        <h2>contenido embebido 2</h2>
+
+        <picture>
+            <source srcset="assets/imagenes/gato-marron-pc-grande.jpg" media="(max-widgt:1200px)">
+            <!-- siempre hay que colocar el img-->
+            <img src="/assets/imagenes/gato-marron.jpg" alt="">
+        </picture>
+
+        <audio src="/assets/audio/mi-musica.mp3" controls autoplay></audio>
+
+        <video src="/assets/audio/mi-video.mp4" controls muted loop poster="/assets/imagenes/gato-marron.jpg"></video>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0Ol9vbs_AwQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- existe la etiquete <figure> se utiliza siempre que se queira romper el flujo dle contenido con un flujo relacionado pero que no es necesario para la interpretacion del articulo se pueen poner imagenes, tablas, inlcuso citas. -->
+
+
+        <h2>contenido</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis eaque distinctio, nostrum architecto iusto aliquid quibusdam, atque commodi voluptates, minima accusantium. Nam praesentium accusantium, neque numquam modi atque vero tenetur?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur porro soluta tenetur perferendis, deserunt nisi labore deleniti illum alias sequi iure minus aut mollitia officia dolorum nam excepturi hic. Facilis.
+        </p>
+        <figure>
+            <img src="/assets/imagenes/gato-marron.jpg" alt="gato marron">
+            <figcaption>Gato tumbado</figcaption>
+        </figure>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis eaque distinctio, nostrum architecto iusto aliquid quibusdam, atque commodi voluptates, minima accusantium. Nam praesentium accusantium, neque numquam modi atque vero tenetur?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur porro soluta tenetur perferendis, deserunt nisi labore deleniti illum alias sequi iure minus aut mollitia officia dolorum nam excepturi hic. Facilis.
+        </p>
+
+        <!--inconos para trabjar en la pagina fontawesome.com/ hay se crea el kit de iconos se crea la cuenta se pone el link que genera y se pasan a la pag el link que hay en el icono-->
+
+        <!-- accesibilidad permite hacer la pagina mas accesible por ejemplo a personas que son ciegas tiene que tener un plugin de accesibiliad instalado.-->
+
+        <p tabindex="1" role="parrafo 1" aria-label="lerr mas">parrafo 1</p>
+
+        <p tabindex="2">parrafo 2</p>
+
+        <p tabindex="3">parrafo 3</p>
+
+        <!-- protocolo Open Graph Protocol es un protocolo que creo facebook para poder elegir cuando compartimos nuestro sitio web elegior que es lo que se muestra en esa publicacion https://ogp.me/ sirve para compartir en todos los sitios y va en las meta para la de twitter se debe buscar la propia de ellas y generarla con ellos https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards -->
+
+        <meta property="og:title" content="The Rock" />
+        <meta property="og:type" content="video.movie" />
+        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+        <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <!-- el pie de pagina-->
+                pie de pagina
+    </footer>
+
+
+    <script src="/javascript.js"></script>
+
+</body>
+
+
+</html>
